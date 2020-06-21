@@ -2,21 +2,12 @@ spring:
   profiles:
     active: dev
 ---
-server:
-  port: 8201
 spring:
   profiles: dev
   application:
-    name: springcould-provider-dept
-# Eureka配置
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+    name:springcould-config-dev
 ---
-server:
-  port: 8202
 spring:
   profiles: test
   application:
-    name: springcould-provider-dept
+    name:springcould-config-test
